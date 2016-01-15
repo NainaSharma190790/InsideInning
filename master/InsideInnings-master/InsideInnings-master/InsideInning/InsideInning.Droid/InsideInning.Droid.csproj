@@ -1,0 +1,231 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{A214C3D5-277A-4EFF-A5DD-18730F168EFB}</ProjectGuid>
+    <ProjectTypeGuids>{EFBA0AD7-5A72-4C68-AF49-83D382785DCF};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>InsideInning.Droid</RootNamespace>
+    <AssemblyName>InsideInning.Droid</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <AndroidApplication>true</AndroidApplication>
+    <AndroidResgenFile>Resources\Resource.Designer.cs</AndroidResgenFile>
+    <GenerateSerializationAssemblies>Off</GenerateSerializationAssemblies>
+    <AndroidManifest>Properties\AndroidManifest.xml</AndroidManifest>
+    <AndroidUseLatestPlatformSdk>
+    </AndroidUseLatestPlatformSdk>
+    <AndroidSupportedAbis>armeabi,armeabi-v7a,x86</AndroidSupportedAbis>
+    <AndroidStoreUncompressedFileExtensions />
+    <MandroidI18n />
+    <JavaMaximumHeapSize />
+    <JavaOptions />
+    <NuGetPackageImportStamp>d983bb99</NuGetPackageImportStamp>
+    <SolutionDir Condition="$(SolutionDir) == '' Or $(SolutionDir) == '*Undefined*'">..\..\</SolutionDir>
+    <RestorePackages>true</RestorePackages>
+    <TargetFrameworkVersion>v4.4</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>TRACE;DEBUG</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AndroidUseSharedRuntime>True</AndroidUseSharedRuntime>
+    <AndroidLinkMode>None</AndroidLinkMode>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AndroidUseSharedRuntime>False</AndroidUseSharedRuntime>
+    <AndroidLinkMode>SdkOnly</AndroidLinkMode>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="ExifLib">
+      <HintPath>..\..\Lib\ExifLib.dll</HintPath>
+    </Reference>
+    <Reference Include="FormsViewGroup, Version=1.3.3.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\packages\Xamarin.Forms.1.3.3.6323\lib\MonoAndroid10\FormsViewGroup.dll</HintPath>
+    </Reference>
+    <Reference Include="ImageCircle.Forms.Plugin.Abstractions">
+      <HintPath>..\..\packages\Xam.Plugins.Forms.ImageCircle.1.0.7\lib\MonoAndroid10\ImageCircle.Forms.Plugin.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="ImageCircle.Forms.Plugin.Android">
+      <HintPath>..\..\packages\Xam.Plugins.Forms.ImageCircle.1.0.7\lib\MonoAndroid10\ImageCircle.Forms.Plugin.Android.dll</HintPath>
+    </Reference>
+    <Reference Include="Mono.Android" />
+    <Reference Include="mscorlib" />
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\..\packages\Newtonsoft.Json.6.0.8\lib\portable-net40+sl5+wp80+win8+wpa81\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Xamarin.Android.Support.v4, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\packages\Xamarin.Android.Support.v4.21.0.3.0\lib\MonoAndroid10\Xamarin.Android.Support.v4.dll</HintPath>
+    </Reference>
+    <Reference Include="Xamarin.Forms.Calendar">
+      <HintPath>C:\Users\naina.sharma\Downloads\Xamarin.Forms.Calendar-master\Xamarin.Forms.Calendar-master\Xamarin.Forms.CalendarSampleApp\Xamarin.Forms.CalendarSampleApp\bin\Debug\Xamarin.Forms.Calendar.dll</HintPath>
+    </Reference>
+    <Reference Include="Xamarin.Forms.Core, Version=1.3.3.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\packages\Xamarin.Forms.1.3.3.6323\lib\MonoAndroid10\Xamarin.Forms.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Xamarin.Forms.Platform.Android, Version=1.3.3.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\packages\Xamarin.Forms.1.3.3.6323\lib\MonoAndroid10\Xamarin.Forms.Platform.Android.dll</HintPath>
+    </Reference>
+    <Reference Include="Xamarin.Forms.Xaml, Version=1.3.3.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\packages\Xamarin.Forms.1.3.3.6323\lib\MonoAndroid10\Xamarin.Forms.Xaml.dll</HintPath>
+    </Reference>
+    <Reference Include="XLabs.Ioc">
+      <HintPath>..\..\packages\XLabs.IoC.2.0.5520\lib\portable-net45+netcore45+wp8+MonoAndroid1+MonoTouch1\XLabs.Ioc.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="MainActivity.cs" />
+    <Compile Include="MonoDroid.TimesSquare\CalendarCellView.cs" />
+    <Compile Include="MonoDroid.TimesSquare\CalendarGridView.cs" />
+    <Compile Include="MonoDroid.TimesSquare\CalendarPickerView.cs" />
+    <Compile Include="MonoDroid.TimesSquare\CalendarRowView.cs" />
+    <Compile Include="MonoDroid.TimesSquare\Logr.cs" />
+    <Compile Include="MonoDroid.TimesSquare\MonthAdapter.cs" />
+    <Compile Include="MonoDroid.TimesSquare\MonthCellDescriptor.cs" />
+    <Compile Include="MonoDroid.TimesSquare\MonthDescriptor.cs" />
+    <Compile Include="MonoDroid.TimesSquare\MonthView.cs" />
+    <Compile Include="Notwrok\NetworkConnection.cs" />
+    <Compile Include="Renderer\CalendarViewRenderer.cs" />
+    <Compile Include="Renderer\iiButtonRenderer.cs" />
+    <Compile Include="Renderer\iiDatePickerRenderer.cs" />
+    <Compile Include="Renderer\iiEditTextRenderer.cs" />
+    <Compile Include="Renderer\iiImageRenderer.cs" />
+    <Compile Include="Renderer\iiLabelRenderer.cs" />
+    <Compile Include="Renderer\iiListViewRenderer.cs" />
+    <Compile Include="Renderer\iiPickerRenderer.cs" />
+    <Compile Include="Renderer\iiTextBoxRenderer.cs" />
+    <Compile Include="ResourceIdManger.cs" />
+    <Compile Include="Resources\Resource.Designer.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Service\Media\MediaPicker.cs" />
+    <Compile Include="Service\Media\MediaPickerActivity.cs" />
+    <Compile Include="SplashScreen.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+    <None Include="Resources\AboutResources.txt" />
+    <None Include="Assets\AboutAssets.txt" />
+    <AndroidResource Include="Resources\drawable\backO.png" />
+    <AndroidResource Include="Resources\layout\SplashScreen.axml">
+      <SubType>AndroidResource</SubType>
+    </AndroidResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="MonoDroid.TimesSquare\License.txt" />
+    <Content Include="Properties\AndroidManifest.xml" />
+    <AndroidResource Include="Resources\drawable-hdpi\about.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\blog.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\ic_launcher.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\refresh.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\twitternav.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\about.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\blog.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\ic_launcher.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\refresh.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\twitternav.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\about.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\blog.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\ic_launcher.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\refresh.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\twitternav.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\about.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\blog.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\ic_launcher.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\refresh.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\twitternav.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\NotePad.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\NotePad.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\NotePad.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\NotePad.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\NotePad128.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\Calendar128.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\Employee128.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\Notify128.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\Balance128.png" />
+    <AndroidResource Include="Resources\drawable\leaves.png" />
+    <AndroidResource Include="Resources\drawable\notify.png" />
+    <AndroidResource Include="Resources\drawable\persons.png" />
+    <AndroidResource Include="Resources\drawable\Usrename.png" />
+    <AndroidResource Include="Resources\drawable\LeftTopCorner.xml" />
+    <AndroidResource Include="Resources\drawable\RigthTopCorner.xml" />
+    <AndroidResource Include="Resources\drawable\cover.png" />
+    <AndroidResource Include="Resources\values\attrs.xml" />
+    <AndroidResource Include="Resources\values\colors.xml" />
+    <AndroidResource Include="Resources\values\dimens.xml" />
+    <AndroidResource Include="Resources\values\Strings.xml" />
+    <AndroidResource Include="Resources\values\styles.xml" />
+    <AndroidResource Include="Resources\layout\calendar_picker.xml" />
+    <AndroidResource Include="Resources\layout\dialog.xml" />
+    <AndroidResource Include="Resources\layout\month.xml" />
+    <AndroidResource Include="Resources\layout\week.xml" />
+    <AndroidResource Include="Resources\drawable\calendar_bg_selector.xml" />
+    <AndroidResource Include="Resources\color\calendar_text_selector.xml" />
+    <AndroidResource Include="Resources\drawable\iiTabBox.xml" />
+    <AndroidResource Include="Resources\drawable\rzee.png" />
+    <AndroidResource Include="Resources\drawable\slideout.png" />
+    <AndroidResource Include="Resources\drawable\menuIcon.png" />
+    <AndroidResource Include="Resources\drawable\iiTextBox.xml" />
+    <AndroidResource Include="Resources\drawable\back.png" />
+    <AndroidResource Include="Resources\drawable\splash.png" />
+    <AndroidResource Include="Resources\drawable\Icon.png" />
+    <AndroidResource Include="Resources\drawable\birthday.png" />
+    <AndroidResource Include="Resources\drawable\Calendar.png" />
+    <AndroidResource Include="Resources\drawable\contact.png" />
+    <AndroidResource Include="Resources\drawable\desig.png" />
+    <AndroidResource Include="Resources\drawable\email.png" />
+    <AndroidResource Include="Resources\drawable\password.png" />
+    <AndroidResource Include="Resources\drawable\Notes.png" />
+    <AndroidResource Include="Resources\drawable\summary.png" />
+    <AndroidResource Include="Resources\drawable\balance.png" />
+    <AndroidResource Include="Resources\drawable\KetanSharma.jpg" />
+    <AndroidResource Include="Resources\drawable\MohdRiyaz.jpg" />
+    <AndroidResource Include="Resources\drawable\NainaSharma.jpg" />
+    <AndroidResource Include="Resources\drawable\NehaGupta.jpg" />
+    <AndroidResource Include="Resources\drawable\RupreetGujral.jpg" />
+    <AndroidResource Include="Resources\drawable\ShagunBawa.jpg" />
+    <AndroidResource Include="Resources\drawable\AmanWalia.jpg" />
+    <AndroidResource Include="Resources\drawable\AnilSethi.jpg" />
+    <AndroidResource Include="Resources\drawable\BhavnaPruthi.jpg" />
+    <AndroidResource Include="Resources\drawable\GagandeepSingh.jpg" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="..\InsideInning\InsideInning.projitems" Label="Shared" Condition="Exists('..\InsideInning\InsideInning.projitems')" />
+  <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Enable NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('$(SolutionDir)\.nuget\NuGet.targets')" Text="$([System.String]::Format('$(ErrorText)', '$(SolutionDir)\.nuget\NuGet.targets'))" />
+    <Error Condition="!Exists('..\..\packages\Xamarin.Forms.1.3.3.6323\build\portable-win+net45+wp80+MonoAndroid10+MonoTouch10+Xamarin.iOS10\Xamarin.Forms.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\..\packages\Xamarin.Forms.1.3.3.6323\build\portable-win+net45+wp80+MonoAndroid10+MonoTouch10+Xamarin.iOS10\Xamarin.Forms.targets'))" />
+  </Target>
+  <Import Project="$(SolutionDir)\.nuget\NuGet.targets" Condition="Exists('$(SolutionDir)\.nuget\NuGet.targets')" />
+  <Import Project="..\..\packages\Xamarin.Forms.1.3.3.6323\build\portable-win+net45+wp80+MonoAndroid10+MonoTouch10+Xamarin.iOS10\Xamarin.Forms.targets" Condition="Exists('..\..\packages\Xamarin.Forms.1.3.3.6323\build\portable-win+net45+wp80+MonoAndroid10+MonoTouch10+Xamarin.iOS10\Xamarin.Forms.targets')" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+     Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,18 @@
+E:\Xamarin\InsideInning\InsideInning.Web.Core\bin\Release\InsideInning.Web.Core.dll
+E:\Xamarin\InsideInning\InsideInning.Web.Core\bin\Release\InsideInning.Web.Core.pdb
+E:\Xamarin\InsideInning\InsideInning.Web.Core\obj\Release\InsideInning.Web.Core.dll
+E:\Xamarin\InsideInning\InsideInning.Web.Core\obj\Release\InsideInning.Web.Core.pdb
+D:\vDoers\RZEE\Naina\InsideInning\New\InsideInning\InsideInning.Web.Core\bin\Release\InsideInning.Web.Core.dll
+D:\vDoers\RZEE\Naina\InsideInning\New\InsideInning\InsideInning.Web.Core\bin\Release\InsideInning.Web.Core.pdb
+D:\vDoers\RZEE\Naina\InsideInning\New\InsideInning\InsideInning.Web.Core\obj\Release\InsideInning.Web.Core.csprojResolveAssemblyReference.cache
+D:\vDoers\RZEE\Naina\InsideInning\New\InsideInning\InsideInning.Web.Core\obj\Release\InsideInning.Web.Core.dll
+D:\vDoers\RZEE\Naina\InsideInning\New\InsideInning\InsideInning.Web.Core\obj\Release\InsideInning.Web.Core.pdb
+<<<<<<< HEAD
+E:\Projects\InsideInning\InsideInning.Web.Core\bin\Release\InsideInning.Web.Core.dll
+E:\Projects\InsideInning\InsideInning.Web.Core\bin\Release\InsideInning.Web.Core.pdb
+E:\Projects\InsideInning\InsideInning.Web.Core\obj\Release\InsideInning.Web.Core.csprojResolveAssemblyReference.cache
+E:\Projects\InsideInning\InsideInning.Web.Core\obj\Release\InsideInning.Web.Core.dll
+E:\Projects\InsideInning\InsideInning.Web.Core\obj\Release\InsideInning.Web.Core.pdb
+=======
+E:\Xamarin\InsideInning\InsideInning.Web.Core\obj\Release\InsideInning.Web.Core.csprojResolveAssemblyReference.cache
+>>>>>>> 7295a42a75afd8b8c56db36f70004d57e37dd5dc

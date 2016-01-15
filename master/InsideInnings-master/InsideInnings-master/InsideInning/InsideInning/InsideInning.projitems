@@ -1,0 +1,75 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <MSBuildAllProjects>$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
+    <HasSharedItems>true</HasSharedItems>
+    <SharedGUID>2665fcbc-6113-416f-99bb-2d587e581e70</SharedGUID>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration">
+    <Import_RootNamespace>InsideInning</Import_RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="$(MSBuildThisFileDirectory)App.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Calendar\CalendarView.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Controls\iiButton.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Controls\iiDatePicker.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Controls\iiEditor.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Controls\iiLabel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Controls\iiListView.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Controls\iiPicker.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Controls\iiTextBox.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Data\InsideInningData.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Data\SQLite.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Extension\PositionExtensions.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Helpers\Color.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Helpers\Constants.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Helpers\CrossPushNotification.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Helpers\iiControls.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Helpers\ListImageCell.cs.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Helpers\TaskUtils.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Interface\INetworkConnection.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Media\IMediaPicker.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Media\MediaExtensions.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Media\MediaFile.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Media\MediaFileNoteFoundException.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Media\MediaStorageOptions.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\BaseModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\CheckLogin.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\Employee.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\EmployeeDetails.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\HolidayDetails.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\HomeMenuItem.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\IBusinessBase.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\LeaveDetails.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\LeaveRequest.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Pages\BalanceLeaveViewPage.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Pages\CalendarViewPage.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Pages\CalendarSummaryViewPage.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Pages\EmpDetailsViewPage.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Pages\EmployeeListViewPage.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Pages\HolidayViewPage.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Pages\iiNavigationPage.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Pages\LeaveRequestViewPage.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Pages\NotificationViewPage.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Pages\PushNotificationViewPage.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Pages\Setting.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Service\ServiceHandler.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ViewModels\BaseViewModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ViewModels\EmployeeViewModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ViewModels\HolidayDetailsViewModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ViewModels\HomeViewModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Pages\BaseViewPage.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Pages\DashboardViewPage.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Pages\AddEmployeeViewPage.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Pages\EmployeeDetailsPage.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Pages\HomeViewPage.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Pages\LeaveDetailsViewPage.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Pages\LoginPageView.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ViewModels\LeaveRequestViewModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ViewModels\LoginViewModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Converter\LeaveFlagColorConverter.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="$(MSBuildThisFileDirectory)Converter\" />
+  </ItemGroup>
+</Project>

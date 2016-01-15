@@ -1,0 +1,105 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{DAB742EB-B428-4ABC-B02F-CCE0C235638B}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>InsideInning.Web.Core</RootNamespace>
+    <AssemblyName>InsideInning.Web.Core</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="InvertediDataOperations">
+      <HintPath>bin\Release\InvertediDataOperations.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Custom\InsideInning.BO\BOEmployee.cs" />
+    <Compile Include="Custom\InsideInning.BO\BOEmployeeDetails.cs" />
+    <Compile Include="Custom\InsideInning.BO\CheckLogin.cs" />
+    <Compile Include="Custom\InsideInning.BLL\BLLEmployee.cs" />
+    <Compile Include="Custom\InsideInning.BLL\BLLLeaveDetails.cs" />
+    <Compile Include="Custom\InsideInning.BO\EmployeeProfile.cs" />
+    <Compile Include="Custom\InsideInning.DAL\DBManagers\tblEmployeeDBManager.cs" />
+    <Compile Include="Custom\InsideInning.DAL\DBManagers\tblLeaveDetailsDBManager.cs" />
+    <Compile Include="Custom\InsideInning.DAL\Procedures\spCheckLogin.cs" />
+    <Compile Include="InsideInning.BLL\BLLEmployee.cs" />
+    <Compile Include="InsideInning.BLL\BLLEmployeeDetails.cs" />
+    <Compile Include="InsideInning.BLL\BLLHolidayDetails.cs" />
+    <Compile Include="InsideInning.BLL\BLLLeaveDetails.cs" />
+    <Compile Include="InsideInning.BLL\BLLMailSummary.cs" />
+    <Compile Include="InsideInning.BLL\BLLPushNotification.cs" />
+    <Compile Include="InsideInning.BO\BOEmployee.cs" />
+    <Compile Include="InsideInning.BO\BOEmployeeDetails.cs" />
+    <Compile Include="InsideInning.BO\BOHolidayDetails.cs" />
+    <Compile Include="InsideInning.BO\BOLeaveDetails.cs" />
+    <Compile Include="InsideInning.BO\BOMailSummary.cs" />
+    <Compile Include="InsideInning.BO\BOPushNotification.cs" />
+    <Compile Include="InsideInning.BO\Collections\BOEmployeeDetailsList.cs" />
+    <Compile Include="InsideInning.BO\Collections\BOEmployeeList.cs" />
+    <Compile Include="InsideInning.BO\Collections\BOHolidayDetailsList.cs" />
+    <Compile Include="InsideInning.BO\Collections\BOLeaveDetailsList.cs" />
+    <Compile Include="InsideInning.BO\Collections\BOMailSummaryList.cs" />
+    <Compile Include="InsideInning.BO\Collections\BOPushNotificationList.cs" />
+    <Compile Include="InsideInning.DAL\DBManagers\tblEmployeeDBManager.cs" />
+    <Compile Include="InsideInning.DAL\DBManagers\tblEmployeeDetailsDBManager.cs" />
+    <Compile Include="InsideInning.DAL\DBManagers\tblHolidayDetailsDBManager.cs" />
+    <Compile Include="InsideInning.DAL\DBManagers\tblLeaveDetailsDBManager.cs" />
+    <Compile Include="InsideInning.DAL\DBManagers\tblMailSummaryDBManager.cs" />
+    <Compile Include="InsideInning.DAL\DBManagers\tblPushNotificationDBManager.cs" />
+    <Compile Include="InsideInning.DAL\InsideInningDB.cs" />
+    <Compile Include="InsideInning.DAL\Procedures\spCheckLogin.cs" />
+    <Compile Include="InsideInning.DAL\Procedures\spGetEmployeeByID.cs" />
+    <Compile Include="InsideInning.DAL\Procedures\spGetEmployeeDetails.cs" />
+    <Compile Include="InsideInning.DAL\Procedures\spGetEmployeeDetailsByID.cs" />
+    <Compile Include="InsideInning.DAL\Procedures\spGetEmployees.cs" />
+    <Compile Include="InsideInning.DAL\Procedures\spGetLeaveByEmployeeID.cs" />
+    <Compile Include="InsideInning.DAL\tblEmployee.cs" />
+    <Compile Include="InsideInning.DAL\tblEmployeeDetails.cs" />
+    <Compile Include="InsideInning.DAL\tblHolidayDetails.cs" />
+    <Compile Include="InsideInning.DAL\tblLeaveDetails.cs" />
+    <Compile Include="InsideInning.DAL\tblMailSummary.cs" />
+    <Compile Include="InsideInning.DAL\tblPushNotification.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Custom\InsideInning.BO\Collections\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
